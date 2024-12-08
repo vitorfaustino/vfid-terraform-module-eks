@@ -56,4 +56,4 @@ module "eks" {
 * Add External Secrets Operator
 * Add ADOT for tracing with X-Ray
 * Add Managed Prometheus
-* Add Managed Grafana
+* Add Managed Grafana 
