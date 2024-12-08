@@ -55,3 +55,4 @@ module "eks" {
 * Verify with security if Bottlerocket OS can be used
 * Add External Secrets Operator
 * Add ADOT for tracing with X-Ray
+* Add Managed Prometheus
