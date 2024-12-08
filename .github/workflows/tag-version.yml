@@ -1,43 +1,28 @@
-name: Tag Version
+name: Release
 
 on:
   push:
     branches:
       - main
 
+permissions:
+  contents: write
+  pull-requests: write
+
 jobs:
-  test:
+  release:
     runs-on: ubuntu-latest
-
-    name: Tag New Version
-    if: "!contains(github.event.head_commit.message, '[release]')"
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-        with:
-          token: ${{ secrets.GH_TOKEN }}
 
-      - name: Set Node.js 19.x
+      - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 19.x
-      
-      # node dependency cache
-      # this is not required but speeds up the process
-      - uses: actions/cache@v3
-        with:
-          path: ./node_modules
-          key: node-${{ hashFiles('**/composer.lock') }}
-          restore-keys: |
-            node
+          node-version: '20'
 
-      - name: Install JS deps
-        uses: borales/actions-yarn@v4
+      - name: Create Release
+        uses: google-github-actions/release-please-action@v4
         with:
-          cmd: install
-
-      - name: Tag Version
-        run: ./node_modules/semantic-release/bin/semantic-release.js --no-ci
-        env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+          release-type: node
