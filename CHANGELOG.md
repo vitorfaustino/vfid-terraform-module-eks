@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/vitorfaustino/vfid-terraform-module-eks/compare/v1.0.1...v1.1.0) (2024-12-09)
+
+
+### Features
+
+* Add opentelemetry tracing ([04cc9df](https://github.com/vitorfaustino/vfid-terraform-module-eks/commit/04cc9df79df75c917196d4591feecbbd3fc21236))
+
 ## [1.0.1](https://github.com/vitorfaustino/vfid-terraform-module-eks/compare/v1.0.0...v1.0.1) (2024-12-09)
 
 
