@@ -14,7 +14,7 @@ It should be used combined with vpc-eks module
 ```hcl
 module "eks" {
 
-  source                   = "./eks"
+  source = "git::https://GIT_DOMAIN/vfid-terraform-module-eks.git?ref=v1.0.1"
   
   project                  = var.project
   region                   = var.region
@@ -47,13 +47,18 @@ module "eks" {
 
 * Karpenter Autoscaler [Docs](https://karpenter.sh/docs/)
 * AWS Load Balancer Controller [Docs](https://kubernetes-sigs.github.io/aws-load-balancer-controller/latest/guide/ingress/annotations/)
-* External DNS Operator
-* Metrics Server
+* External DNS Operator [Docs](https://kubernetes-sigs.github.io/external-dns/latest/)
+* Metrics Server [Docs](https://kubernetes-sigs.github.io/metrics-server/)
+* Amazon distro for Opentelemetry (ADOT) with X-ray integration [Docs](https://aws-otel.github.io/docs/introduction)
 
 ## 📝 Roadmap
 
-* Verify with security if Bottlerocket OS can be used
-* Add External Secrets Operator
-* Add ADOT for tracing with X-Ray
-* Add Managed Prometheus
-* Add Managed Grafana
+<!-- markdownlint-disable -->
+
+- [ ] Verify with security if Bottlerocket OS can be used
+- [ ] Add External Secrets Operator
+- [ ] Add ADOT for tracing with X-Ray
+- [ ] Add Managed Prometheus
+- [ ] Add Managed Grafana
+
+<!-- markdownlint-enable -->
