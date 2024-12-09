@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.1](https://github.com/vitorfaustino/vfid-terraform-module-eks/compare/v1.0.0...v1.0.1) (2024-12-09)
+
+
+### Bug Fixes
+
+* add icon ([c7f1dfe](https://github.com/vitorfaustino/vfid-terraform-module-eks/commit/c7f1dfe4111676af347fd11373c648404b2a90fa))
+* add icon ([b2f2479](https://github.com/vitorfaustino/vfid-terraform-module-eks/commit/b2f247906a6a527132a207c44e2d936d58d924d0))
+
 ## 1.0.0 (2024-12-08)
 
 
