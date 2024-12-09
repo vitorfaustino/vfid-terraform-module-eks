@@ -50,7 +50,7 @@ module "eks" {
 * External DNS Operator
 * Metrics Server
 
-## Roadmap
+## 📝 Roadmap
 
 * Verify with security if Bottlerocket OS can be used
 * Add External Secrets Operator
