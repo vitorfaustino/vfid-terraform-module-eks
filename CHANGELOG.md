@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/vitorfaustino/vfid-terraform-module-eks/compare/v1.1.1...v1.2.0) (2024-12-10)
+
+
+### Features
+
+* add External Secrets ([d704a70](https://github.com/vitorfaustino/vfid-terraform-module-eks/commit/d704a70d938c9d15edcdf3594a2b1f5e8286fa6c))
+
 ## [1.1.1](https://github.com/vitorfaustino/vfid-terraform-module-eks/compare/v1.1.0...v1.1.1) (2024-12-09)
 
 
