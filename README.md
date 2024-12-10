@@ -48,6 +48,7 @@ module "eks" {
 * Karpenter Autoscaler [Docs](https://karpenter.sh/docs/)
 * AWS Load Balancer Controller [Docs](https://kubernetes-sigs.github.io/aws-load-balancer-controller/latest/guide/ingress/annotations/)
 * External DNS Operator [Docs](https://kubernetes-sigs.github.io/external-dns/latest/)
+* External Secrets Operator [Docs](https://github.com/external-secrets/external-secrets)
 * Metrics Server [Docs](https://kubernetes-sigs.github.io/metrics-server/)
 * Amazon distro for Opentelemetry (ADOT) with X-ray integration [Docs](https://aws-otel.github.io/docs/introduction)
 

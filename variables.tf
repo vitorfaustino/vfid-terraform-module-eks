@@ -146,6 +146,9 @@ variable "eks_config" {
     ext_dns_controller_namespace = string
     ext_dns_chart_version        = string
 
+    ext_secrets_controller_namespace = string
+    ext_secrets_chart_version        = string
+
     metrics_server_controller_namespace = string
     metrics_server_chart_version        = string
 
@@ -178,6 +181,9 @@ variable "eks_config" {
 
     ext_dns_controller_namespace = "ext-dns"
     ext_dns_chart_version        = "1.15.0"
+
+    ext_secrets_controller_namespace = "ext-secrets"
+    ext_secrets_chart_version        = "0.11.0"
 
     metrics_server_controller_namespace = "metrics-server"
     metrics_server_chart_version        = "3.12.2"
